@@ -1,0 +1,13 @@
+server:
+  port:
+    9296
+
+spring:
+  application:
+    name: blog-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/SagarNepali/blog-configuration
+          clone-on-start: true
